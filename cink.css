@@ -1,0 +1,440 @@
+html, body {
+  height: 100%; /* Set the height of the body and html elements to 100% of viewport height */
+  margin: 0;
+    background-color: #deb29f;
+  margin-bottom: 1em;/* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+
+section {
+  height: 100%;
+  width: auto;
+  background-image: url("rshop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #ca9178;*/
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
+  grid-gap;
+  margin-left: 5px;
+
+  @media screen and (max-width: 480px){
+    background-image: url("canvap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.logo{
+  margin-left: 2em;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 40em;
+
+}
+
+.logo img{
+
+  width: 0.8em;
+  height: 0.8em;
+  margin-top: 1.25em;
+  margin-right: 0.5em;
+}
+
+#nic{
+  font-family: 'Playfair Display', serif;
+  color: #ca9178;
+  opacity: 0.95;
+  text-shadow: 0.05em 0.05em whitesmoke;
+
+  @media only screen and (max-width: 767.98px){
+    margin: -1.1em 1.3em;
+  }
+}
+
+
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1;
+  grid-row: 1;
+  height: 30%;
+  width: 50%;
+
+  @media only screen and (max-width: 767.98px){
+   margin: 1px;
+   margin-left: 2px;
+   margin-top: -12px;
+  }
+
+.logo img{
+  border-radius: 1em;
+  margin-left: 2em;
+  margin-top: 0.1em;
+
+
+}
+
+
+}
+
+.header {
+  grid-column: 1;
+  grid-row: 2;
+  height: 35%;
+  width: 95%;
+  margin-top: 8em;
+
+  @media only screen and (max-width: 767.98px){
+  margin-top: 3em;
+  }
+}
+
+.image {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  margin-top: 0;
+  opacity: 0.95;
+
+  @media only screen and (max-width: 767.98px){
+  height: 0;
+  width: 0;
+  }
+}
+
+.image img {
+  min-width: 200%;
+  max-height: 95%;
+
+}
+
+
+.footer {
+  grid-column: 1;
+  grid-row: 3;
+  height: auto;
+  width: 50%;
+  color: white;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  margin-top: -10em;
+  margin-left: 5px;
+  justify-content: center;
+
+
+}
+
+.footer a {
+  margin-right: 10px; /* Add spacing between the footer items */
+  font-size: 1.2em;
+
+}
+
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #ca9178;
+  margin: 0 0 0 1em;
+  opacity: 0.95;
+  text-shadow: 0.05em 0.05em whitesmoke;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: whitesmoke;
+  margin: 0 0 0 2em;
+  opacity: 0.95;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid oldlace;
+  border-radius: 2px;
+  background-color: oldlace;
+
+  @media only screen and (max-width: 767.98px){
+   position: absolute;
+   bottom: 10px;
+   right: 65px;
+  }
+}
+
+.dropdown-btn {
+  background-color: #ca9178;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 2px 1px;
+
+  @media only screen and (max-width: 768px){
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  height: 0.1em;
+  width: 0.1em;
+  margin-right: 0;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+
+  @media only screen and (max-width: 767.98px){
+    height: 5px;
+    width: 5px;
+    padding: 4px 8px;
+  }
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+aside{
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("rshop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+
+  @media only screen and (max-width: 767.98px){
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("rshop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150%;
+    width: 100%;
+  }
+}
+
+aside img{
+  height: 10em;
+  width: 10em;
+  border: 1px solid sienna;
+  border-radius: 10px;
+  margin: 0.5em;
+  justify-content: center;
+  max-width: 100%;
+
+  @media only screen and (max-width: 767.98px){
+    height: 6em;
+    width: 6em;
+    margin: 0.2em;
+
+    @media (max-width: 480px){
+      height: 5em;
+      width: 5em;
+      margin: 0.15em;
+
+    }
+  }
+}
+
+
+.styles{
+  margin-top: 5em;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 60%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  max-height:;
+
+  @media only screen and (max-width: 767.98px){
+    background-image: url("rshop.j");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 6em auto 1em 1em;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: 375px){
+    background-image: url("rshop.j");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 6em -20px 1em 3em;
+    justify-content: center;
+  }
+}
+
+.styles a:hover img{
+      transform: scale(1.3)
+}
+.leftside{
+  display: block;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media only screen and (max-width: 767.98px){
+    background-color: inherit;
+    height: auto;
+    width:
+  }
+}
+
+.logo2{
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 57em;
+
+  @media only screen and (min-width: 768px){
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 104em
+  }
+
+  @media only screen and (max-width: 767.98px){
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -3px;
+    margin-bottom: 2em;
+  }
+
+}
+
+.logo2 img{
+
+  width: 0.8em;
+  height: 0.8em;
+  margin-top: 1.5em;
+}
+
+.tag{
+  position: absolute;
+  right: 20%;
+}
+
+.tag h3{
+  margin-left: 10em;
+  color: white;
+  font-size: 2em;
+  text-decoration: underline;
+  text-shadow: 0.05em 0.05em #deb29f;
+
+  @media only screen and (max-width: 767.98px){
+    font-size: 1.5em;
+    margin: 2em auto 1em;
+    font-style: italic;
+
+  }
+}
+
+#cin{
+  font-family: 'Playfair Display', serif;
+  color: whitesmoke;
+  opacity: 0.7;
+  text-shadow: 0.05em 0.05em sienna;
+}
+
+h4{
+  font-family: 'Satisfy', cursive;
+  color: snow;
+}
+
+
+
+aside .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+aside .dropdown-content a {
+  display: inline-block;
+  height: 0.1em;
+  width: 0.1em;
+  margin-right: 0px;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+aside .dropdown-content img {
+  height: 1em;
+  width: 1em;
+}
+aside .dropdown-btn {
+  background-color: #ca9178;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 2px 1px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  bottom: 5em;
+
+
+  @media only screen and (max-width: 767.98px){
+   position: absolute;
+   bottom: -820px;
+   right: 10px;
+
+  }
+
+    @media only screen and (min-width: 768px){
+      height: 0;
+      width:0;
+    }
+}
+
+
+aside .dropdown-content a {
+  display: inline-block;
+  align-items: center;
+  height: auto;
+  width: auto;
+  margin-right: 3px;
+  color: #333;
+  text-decoration: none;
+  padding: 2px 0;
+
+  @media only screen and (min-width: 768px){
+    height: 0;
+    width:0;
+  }
+}
